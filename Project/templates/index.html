@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>401(k) Contribution</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>401(k) Contribution Settings</h1>
+
+        <!-- Contribution Type -->
+        <div class="section">
+            <h3>Contribution Type</h3>
+            <label><input type="radio" name="type" value="percent" checked> Percent of paycheck</label>
+            <label><input type="radio" name="type" value="dollar"> Dollar amount</label>
+        </div>
+
+        <!-- Slider + Input -->
+        <div class="section">
+            <h3 id="amount-label">Contribution % per paycheck</h3>
+            <input id="slider" type="range" min="0" max="50" value="10" step="0.5">
+            <input id="amount-input" type="number">
+        </div>
+
+        <!-- Button -->
+        <button id="save-btn">Save Contribution</button>
+        <span id="save-message"></span>
+
+        <hr>
+
+        <!-- Summary -->
+        <div class="summary">
+            <h3>Summary</h3>
+            <p><strong>Annual Salary:</strong> <span id="salary"></span></p>
+            <p><strong>Paychecks per year:</strong> <span id="checks"></span></p>
+            <p><strong>YTD Contributions:</strong> <span id="ytd"></span></p>
+            <p><strong>Contribution per paycheck:</strong> <span id="per"></span></p>
+
+            <h3>Retirement Impact</h3>
+            <p><strong>Balance at retirement (age 65):</strong> <span id="projected"></span></p>
+            <p><strong>Balance with +1%:</strong> <span id="projected-plus"></span></p>
+            <p><strong>Extra saved:</strong> <span id="extra"></span></p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

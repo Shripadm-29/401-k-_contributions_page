@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f5f7;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    margin: auto;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.summary p {
+    margin: 5px 0;
+}
+
+#slider {
+    width: 100%;
+}
+
+#save-btn {
+    padding: 10px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#save-btn:hover {
+    background: #1d4ed8;
+}
+
+#save-message {
+    margin-left: 10px;
+}
