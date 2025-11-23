@@ -1,35 +1,45 @@
+/* style.css */
+
 body {
     font-family: Arial, sans-serif;
     background: #f4f5f7;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    overflow-x: hidden; 
 }
-
+/* Main wrapper */
 .container {
+    width: 100%;
+    max-width: 1100px;   
+    margin: 0 auto;      
+    padding: 40px 20px;  
     background: white;
-    padding: 25px;
-    margin: auto;
-    max-width: 700px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
+/* Headings */
 h1 {
     margin-top: 0;
 }
 
+/* Sections */
 .section {
     margin-bottom: 25px;
 }
 
-.summary p {
-    margin: 5px 0;
-}
-
+/* Slider */
 #slider {
     width: 100%;
+    max-width: 600px; 
+    display: block;
 }
 
+/* Number input */
+#amount-input {
+    width: 120px;
+    margin-top: 10px;
+}
+
+/* Save button */
 #save-btn {
     padding: 10px 20px;
     background: #2563eb;
@@ -37,6 +47,7 @@ h1 {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 #save-btn:hover {
@@ -45,4 +56,9 @@ h1 {
 
 #save-message {
     margin-left: 10px;
+}
+
+/* Summary section */
+.summary p {
+    margin: 5px 0;
 }
